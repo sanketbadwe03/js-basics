@@ -22,3 +22,33 @@ function maxNum(a,b) {
 
 }
 console.log(maxNum(15,5))
+
+// -----------------Address Obj -------------
+
+function Addr(street,city,zipCode) {
+    this.street = street
+    this.city = city
+    this.zipCode =zipCode
+    this.showAddr = function() {
+        let log = `
+    street = ${this.street}
+    city = ${this.city}
+    zipCode = ${this.zipCode}
+    `
+     console.log(log)   
+
+    }
+}
+function showAddr2(addr) {
+    let log = `
+    street = ${addr.street}
+    city = ${addr.city}
+    zipCode = ${addr.zipCode}
+    `
+    
+    console.log(log)
+}
+
+const a1 = new Addr("Datta Mandir Road", "Wakad", "411057")
+a1.showAddr()
+showAddr2(a1)
