@@ -75,3 +75,28 @@ cir.print()
 delete cir.radius
 delete cir.color
 cir.draw()
+
+/** IMP
+ * Every object in js has a property called 'constructor'
+ * In the browser console, when we apply ".constructor" to any property it shows which constructor was used to create that property.
+ * 
+ */
+
+
+/** Value Types Vs. Ref types
+ * Premitives are copy by value.
+ * 
+ * Premitive/Value types : Number, String, Boolean, Sybmob, undefined, null
+ * Reference Types : Object, Function, Array
+ */
+
+let x = 10;
+let y = x;
+
+x= 20;  // if we print y, it will return y=10 ofc!
+
+// on the other hand, if this was an object like :
+let a = {value : 10}
+let b = a;
+
+a.value = 20  // Now, if we print b, it will return b=20 because it is call by reference.
