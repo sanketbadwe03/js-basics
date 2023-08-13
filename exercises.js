@@ -52,3 +52,16 @@ function showAddr2(addr) {
 const a1 = new Addr("Datta Mandir Road", "Wakad", "411057")
 a1.showAddr()
 showAddr2(a1)
+
+// -----------------Post Obj -------------
+let post = {
+    titile : "Haha!",
+    details : "Something funny!",
+    author : "Me",
+    comments : [
+        { comment:"Not so funny", author:"My Friend"},
+        { comment:"Ugly", author:"Another Friend"},
+    ],
+    views : 10
+}
+console.log(post)
