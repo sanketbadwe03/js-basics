@@ -38,7 +38,7 @@ function greet(name) {
 greet('Sanket');
 
 //--------------------Operaters-------------------------------------------------
-console.log(1 === 1); // ==> Strict equality. checks Type + Value
+console.log(1 === 1); // ==> Strict equality. checks Type + Value. THIS IS THE RIGHT WAY TO CHECK IF STRINGS ARE EQUAL. (kinda equivalent to java's a.equals("something"))
 console.log('1' === 1); // returns false
 console.log('1' == 1);  // Doesnt care about type, just the value. It will also conver types implicitely. returns true.
 console.log(true == 1)  // returns true since 1 will be converted to bolean 1 i.e. true.
